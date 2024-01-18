@@ -11,4 +11,13 @@ You'll notice that the first seven columns look like any other dataset you're us
 
 <img src='../images/melted1.png'>
 
-There are now many more rows in this dataset--one for each unique time and zipcode combination in the data! Once our dataset is in this format, we'll be able to train an ARIMA model on it. The method used to convert from Wide to Long is `pd.melt()`, and it is common to refer to our dataset as 'melted' after the transition to denote that it is in long format. 
+
+After reshaping the data, we perform a comprehensive analysis to detect and evaluate any missing values in the dataset. For this examination, we utilize Seaborn's countplot to visualize the distribution of missing values.
+<img src="../images/missing_values.png">
+
+We have also investigated the number of unique values in the dataframe, focusing on key columns such as RegionID, RegionName, City, State, and Metro, time, value and also county name 
+<img src="../images/unique_values.png">
+
+Generate a plot illustrating the relationship between time and the mean of values in the dataset.
+<img src="../images/time_seires_plot.png">
+
