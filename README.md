@@ -1,36 +1,24 @@
-# **UNLOCKING REAL ESTATE SUCCESS WITH TIME SERIES MODELLING**
+# **<ins>REAL ESTATE TIME SERIES MODELLING AND MARKET ANALYSIS</ins>**
 
-In a bustling cityscape where opportunities arise and markets evolve, a cutting-edge solution is on the horizon for a visionary real estate investment firm – a solution that promises to transcend conventional boundaries and redefine the landscape of strategic decision-making. Welcome to the world of Time Series Modeling, a realm where data becomes the compass for astute investments.
+# <ins>Motivation </ins>
+Homes are very dear to people and are even one of the most basic need in the mslow hierarchy of needs. The whole idea of house valuation is sometimes faced with the challenges of overpricing or undervaluation. To solve the problem of clients being conned by middle men posing as the home owners was the main motivation behind this housing project. 
 
-Our journey begins with a challenge posed by a forward-thinking real estate investment firm - BarnaBee & Co.. Faced with the seemingly straightforward question – "What are the top 5 best zip codes for us to invest in?" – the stakes are high, and the road to success is paved with data-driven insights.
+Real estate companies and home owners alike always want the value of their respective properties for easier valuation in the event of selling property. Time has evolved and many Real Estate companies are leveraging on the use of machine learning models to have  a clear valuation strategy. Prices are ususally valued with accordance to regions and the industtrial activities going on. 
 
-<div style='text-align:center'>
-  <img src='./images/housing_crash.webp' width='800'/>
-</div>
+# <ins> Data Understanding </ins>
+The Zillow website hosts various homes and real estate properties on sale. The information on those homes is very immense and may provide clear guidance on those who want to buy new homes. This project uses data sourced from zillow and conatins all the homes valuation even during the 2008 crisis that hit the US that led to the rise of alot of default rates among those with housing mortgages. 
 
-## Introduction
+# <ins> Objectives</ins>
+The end goal is to do a markert analysis and analyze the effects of the crisis on various regions and how it impacted the valuation of these homes. Another taskj foir this projevt was also to build a time series model with better R2 scores which capture the effect of seasonlity efficiently and cumulatively. 
 
-The seemingly simple query concealed intricate nuances - profits or risks, short-term gains or long-term stability? These were all factors to consider when trying to answer the question laid out by BarnaBee and Co. - **_what are the 5 best zip codes to invest in?_** Furthermore, in the pursuit of excellence, the forged metrics aligned with the investment firm’s vision. It wasn’t merely about minimizing mean squared error; it was about orchestrating a delicate balance between risk and profitability. The ROI yield emerged as the guiding star, steering investment decisions with unwavering precision.
+Another goal at hand is advise investors on the top 5 regions to invest in speciffically with respect to the Return On Investment. With 2008 crisis at play, the reccommended regions should have the anticipation of any future crisis. 
 
-These complexities were adeptly navigated, transforming ambiguity into actionable intelligence and truly unearthing the value of real estate.
+Analyzing the imapct of the crisis is also a very important task as it analyzez the regions which are somehow immune to market crunches. 
 
-## Business Understanding
+# <ins> Exploratory Data analysis </ins>
+To analyze the market trends is viable only through creation of pivot tables and grouping data into varios frequencies as well as ffiltering down to specific regions. Creating visuals like bar charts and line plots as well as graphs to visually inspect the devastating effect of the crisis is higly reccommended. 
 
-### Objectives
 
-### Potential Challenges
-
-## Data Understanding
-
-## EDA & Data Visualisation
-
-## Feature Engineering
-
-## ARIMA Modelling
-
-## Fine Tunining With Prophet
-
-## Interpreting Results
 #### Modelling
 Data for modelling should be in a long format and the column containing the datetime values set as index. This is necessary because it ensures easier resampling adn data aggregation on various frequencies.
 This stage involves using time series forecasting models to analyze the forecasted values and trends. The various time series models include ARIMA, SARIMAX and Prophet models. The SARIMAX handles the seasonlaity well but is usually prone to overfitting. 
