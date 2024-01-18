@@ -1,4 +1,5 @@
 import joblib 
+import pickle 
 import os    
 import streamlit as st 
 
