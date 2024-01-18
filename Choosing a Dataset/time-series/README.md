@@ -32,4 +32,10 @@ The solution here is training the models on free **GPUs** avilable in the cloud 
 1. Monitor the models predictions an dscores at production.
 2. Deploy both models for easier forecasting.
 
+As seen in the plots, Prophet model addresses the seasonality pretty well and performs even better when the seasonal components are well adjusted.
+![Seasonality during the Crisis](fall1.jpg)
+![Falling trends during 2008 crisis](fall_trends.jpg)
+![After the crisis](after_fall.jpg)
+
+
 
