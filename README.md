@@ -19,7 +19,7 @@ Analyzing the imapct of the crisis is also a very important task as it analyzez 
 To analyze the market trends is viable only through creation of pivot tables and grouping data into varios frequencies as well as ffiltering down to specific regions. Creating visuals like bar charts and line plots as well as graphs to visually inspect the devastating effect of the crisis is higly reccommended. 
 
 
-#### Modelling
+# <ins> Modelling</ins>
 Data for modelling should be in a long format and the column containing the datetime values set as index. This is necessary because it ensures easier resampling adn data aggregation on various frequencies.
 This stage involves using time series forecasting models to analyze the forecasted values and trends. The various time series models include ARIMA, SARIMAX and Prophet models. The SARIMAX handles the seasonlaity well but is usually prone to overfitting. 
 
