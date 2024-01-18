@@ -15,9 +15,31 @@ You'll notice that the first seven columns look like any other dataset you're us
 After reshaping the data, we perform a comprehensive analysis to detect and evaluate any missing values in the dataset. For this examination, we utilize Seaborn's countplot to visualize the distribution of missing values.
 <img src="../images/missing_values.png">
 
-We have also investigated the number of unique values in the dataframe, focusing on key columns such as RegionID, RegionName, City, State, and Metro, time, value and also county name 
+We have also investigated the number of unique values in the dataframe, focusing on key columns such as RegionID, RegionName, City, State, and Metro, time, value, and also county name 
 <img src="../images/unique_values.png">
 
 We have also generated a plot illustrating the connection between time and the mean values i
 <img src="../images/time_series_plot.png">
 
+## Objective:
+### Main Objective
+- To forecast real estate prices for various zip codes using the Zillow Research dataset.
+### Specific objective
+
+- To convert the dataset from Wide Format to Long Format using pd.melt() to enhance compatibility with time series models.
+
+
+- To conduct exploratory data analysis to understand the temporal patterns and identify any underlying trends, seasonality, or irregularities in the data.
+Missing Values Analysis:
+
+- To utilize univariate time series models, such as ARIMA, to capture and forecast the temporal patterns of individual zip codes.
+Multivariate Time Series Modeling:
+
+- To explore multivariate time series models, considering factors like seasonality, economic indicators, and other relevant features to improve forecasting accuracy.
+Model Evaluation:
+
+- To evaluate the performance of time series models using appropriate metrics, ensuring reliability and effectiveness in predicting real estate prices.
+
+
+- To determine the top 5 zip codes for investment based on the forecasted real estate prices, considering profit margins, risks, and other relevant factors.
+Documentation and Reporting:
