@@ -6,22 +6,28 @@ Homes are very dear to people and are even one of the most basic need in the msl
 Real estate companies and home owners alike always want the value of their respective properties for easier valuation in the event of selling property. Time has evolved and many Real Estate companies are leveraging on the use of machine learning models to have  a clear valuation strategy. Prices are ususally valued with accordance to regions and the industtrial activities going on. 
 
 # <ins> Data Understanding </ins>
-The Zillow website hosts various homes and real estate properties on sale. The information on those homes is very immense and may provide clear guidance on those who want to buy new homes. This project uses data sourced from zillow and conatins all the homes valuation even during the 2008 crisis that hit the US that led to the rise of alot of default rates among those with housing mortgages. 
+The Zillow website hosts various homes and real estate properties on sale. The information on those homes is very immense and provides clear guidance on those who want to buy new homes. This project uses data sourced from zillow and contains all the homes values/prices. 
 
 # <ins> Objectives</ins>
-The end goal is to do a markert analysis and analyze the effects of the crisis on various regions and how it impacted the valuation of these homes. Another taskj foir this projevt was also to build a time series model with better R2 scores which capture the effect of seasonlity efficiently and cumulatively. 
 
-Another goal at hand is advise investors on the top 5 regions to invest in speciffically with respect to the Return On Investment. With 2008 crisis at play, the reccommended regions should have the anticipation of any future crisis. 
+* The end goal is to do a market analysis and analyze the effects of the crisis on various regions and how its impact to valuation of these homes.
 
-Analyzing the imapct of the crisis is also a very important task as it analyzez the regions which are somehow immune to market crunches. 
+* Another task for this project involved building a time series model with more focus on the **R2 scores**. The model to be productionized should adress the anticipation of any future crisis and handle seasonlity efficiently and cumulatively. 
+
+* Another goal for this project was investigating the top 5 regions to invest in specifically with respect to the Return On Investment. With 2008 crisis at play, the reccommended regions should have the anticipation of any future crisis also.
+
+* Analyze the impactt of the crisis and growth rates of the real estate industry after the 2008 crush.  
 
 # <ins> Exploratory Data analysis </ins>
-To analyze the market trends is viable only through creation of pivot tables and grouping data into varios frequencies as well as ffiltering down to specific regions. Creating visuals like bar charts and line plots as well as graphs to visually inspect the devastating effect of the crisis is higly reccommended. 
+
+* To analyze the real estate market trends is viable only through creation of pivot tables and grouping data into various frequencies as well as filtering down to specific regions. 
+
+* Create visuals like bar charts, line plots and graphs to inspect the after-effects of the crisis. 
 
 
 # <ins> Modelling</ins>
 Data for modelling should be in a long format and the column containing the datetime values set as index. This is necessary because it ensures easier resampling adn data aggregation on various frequencies.
-This stage involves using time series forecasting models to analyze the forecasted values and trends. The various time series models include ARIMA, SARIMAX and Prophet models. The SARIMAX handles the seasonlaity well but is usually prone to overfitting. 
+This stage involves using time series forecasting models to analyze the forecasted values and trends. The various time series models include ARIMA, SARIMAX and Prophet models. The SARIMAX handles the seasonality well but is usually prone to overfitting. 
 
 As good modelling approach dictates, it is often good practic eto start out with a baseline model with pdq value combinations obtained from the auto-correlation plots. This model at most times has no tuning applied. The subsequent models shouls however have to undergo some tuning so as to avoid the problem of overfitting which is pretty common in most time series models. 
 
@@ -50,7 +56,10 @@ The solution here is training the models on free **GPUs** avilable in the cloud 
 
 #### <ins>Future Steps</ins>
 
-1. Monitor the models predictions an dscores at production.
+1. Monitor the models house value predictions and scores at production.
 2. Deploy both models for easier forecasting.
 
+# <ins> Deployment(Streamlit) </ins>
+Testing the model at a production level, the pickled file **house_value_predictor** should be loaded either using the joblib or loaded into a streamlit environment. The model versions needed to run the model are contained in the **requirements.txt** file. The model runs on python version 3.10. This pickled file takes in datetime inputs and outputs the average predicted house values factoring in the seasonality the model learned during the **2008 market crash**.
 
+To forecast house values on the stop 30 specific zipcodes, the pickled file **Zipcode_predict** should be loaded in  a streamlit environment using the **streamlit.py** file. It also takes in datetime input as well as specifying zip codes to get the forecasted value. 
