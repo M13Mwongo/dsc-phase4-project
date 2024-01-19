@@ -1,15 +1,14 @@
 
 # data pre-processing
 
-This notebook has been provided to you so that you can make use of the following starter code to help with the trickier parts of preprocessing the Zillow dataset. 
+This notebook has been provided to you so that we can make use of the following starter code to help with the trickier parts of preprocessing the Zillow dataset. 
+Data preprocessing is a crucial step in developing an effective time series model for forecasting real estate investment trends. In this context, we shall be handling missing values and duplicates and removing them which aids in visualizing patterns from the EDA analysis. 
 
-The notebook contains a rough outline the general order you'll likely want to take in this project. You'll notice that most of the areas are left blank. This is so that it's more obvious exactly when you should make use of the starter code provided for preprocessing. 
 
-**_NOTE:_** The number of empty cells are not meant to infer how much or how little code should be involved in any given step--we've just provided a few for your convenience. Add, delete, and change things around in this notebook as needed!
 
 # Some Notes Before Starting
 
-This project will be one of the more challenging projects you complete in this program. This is because working with Time Series data is a bit different than working with regular datasets. In order to make this a bit less frustrating and help you understand what you need to do (and when you need to do it), we'll quickly review the dataset formats that you'll encounter in this project. 
+Working with Time Series data is a bit different than working with regular datasets. In order to make this a bit less frustrating and help you understand what you need to do (and when you need to do it), we'll quickly review the dataset formats that you'll encounter in this project. 
 
 ## Wide Format vs Long Format
 
