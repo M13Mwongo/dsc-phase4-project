@@ -57,9 +57,12 @@ The solution here is training the models on free **GPUs** avilable in the cloud 
 #### <ins>Future Steps</ins>
 
 1. Monitor the models house value predictions and scores at production.
-2. Deploy both models for easier forecasting.
+2. Deploy both models(**house_value_predictor.pkl** & **Zipcode_predict.pkl**) for easier forecasting.
 
 # <ins> Deployment(Streamlit) </ins>
-Testing the model at a production level, the pickled file **house_value_predictor** should be loaded either using the joblib or loaded into a streamlit environment. The model versions needed to run the model are contained in the **requirements.txt** file. The model runs on python version 3.10. This pickled file takes in datetime inputs and outputs the average predicted house values factoring in the seasonality the model learned during the **2008 market crash**.
 
-To forecast house values on the stop 30 specific zipcodes, the pickled file **Zipcode_predict** should be loaded in  a streamlit environment using the **streamlit.py** file. It also takes in datetime input as well as specifying zip codes to get the forecasted value. 
+Testing the model at a production level, the pickled file **house_value_predictor.pkl** should be loaded either using the joblib or loaded into a streamlit environment. The model versions needed to run the model are contained in the **requirements.txt** file. The model runs on python version 3.10. This pickled file takes in datetime inputs and outputs the average predicted house values factoring in the seasonality the model learned during the **2008 market crash**.
+
+To forecast house values on the top 30 best performing zipcodes, the pickled file **Zipcode_predict.pkl** should be loaded in  a streamlit environment using the **save_model.py** file. It also takes in datetime input as well as specifying zip codes to get the forecasted value. 
+
+Deploying the model to other environments like **Heroku** will however be documented later.
